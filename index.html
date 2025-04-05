@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerKitchen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: black;
+    }
+    .swiper {
+      height: 100vh;
+      width: 100%;
+    }
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 600px;
+      color: white;
+    }
+    .overlay h2 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 bg-black/70 backdrop-blur">
+  <div class="flex items-center">
+    <img src="career-kitchen-logo-trimmed.png" alt="CareerKitchen Logo" class="h-[80px] w-auto max-w-none" />
+  </div>
+  <nav class="hidden md:flex space-x-8">
+    <a href="/index.html" class="text-purple-400 border-b-2 border-purple-500">Home</a>
+    <a href="/blog.html" class="hover:text-purple-400">Blog</a>
+    <a href="/podcast.html" class="hover:text-purple-400">Podcast</a>
+    <a href="/resources.html" class="hover:text-purple-400">Resources</a>
+    <a href="/recruitpro.html" class="hover:text-purple-400">RecruitPro</a>
+  </nav>
+  <a href="https://form.typeform.com/to/vUdWHzFB" target="_blank">
+    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Subscribe</button>
+  </a>
+</header>
+
+<!-- 1. MAIN CALL TO ACTION -->
+<section class="pt-32 pb-10 text-center bg-black text-white">
+  <h1 class="text-5xl md:text-6xl font-bold mb-4">Get Career Advice from Industry Experts</h1>
+  <p class="text-gray-400 text-xl max-w-2xl mx-auto">Real stories, expert strategies, and proven tools to help you land your dream job or build your freelance career</p>
+</section>
+
+<!-- 2. PODCAST CAROUSEL -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="jesse-osbourne.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Latest Podcast</p><h2 class="mb-4">The unteachable power of motivation with Jesse Osbourne</h2><a href="#" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a></div></div>
+    <div class="swiper-slide"><img src="gary-vee.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Gary Vee: Hustle in the Digital Age</h2><a href="https://www.youtube.com/watch?v=_RlhDkgRhf0&t=325s" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
+    <div class="swiper-slide"><img src="chris-gardner.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Chris Gardner: From Struggle to Success</h2><a href="https://www.youtube.com/watch?v=HavdjDXB8xY" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
+    <div class="swiper-slide"><img src="daymond-john.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Daymond John: Building Your Personal Brand</h2><a href="https://www.youtube.com/watch?v=3ELrPRRV7cQ&t=1550s" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
+  </div>
+  <div class="swiper-pagination swiper-pagination-vertical"></div>
+</div>
+
+<!-- 3. FREE CAREER RESOURCES -->
+<section class="py-20 bg-black text-center text-white">
+  <h2 class="text-4xl font-bold mb-12">Free Career Resources</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><h3 class="text-xl font-bold mb-2">Resume Template Pack</h3><p class="text-gray-300 mb-4">ATS-friendly templates used by professionals at FAANG companies.</p><a href="#" class="text-blue-400 hover:text-blue-300">Download Now →</a></div>
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><h3 class="text-xl font-bold mb-2">Interview Questions Bank</h3><p class="text-gray-300 mb-4">500+ real interview questions with proven answer frameworks.</p><a href="#" class="text-blue-400 hover:text-blue-300">Get Access →</a></div>
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><h3 class="text-xl font-bold mb-2">Talk to a Team Member</h3><p class="text-gray-300 mb-4">Get personalized support from a recruiter or coach about your next step.</p><a href="#" class="text-blue-400 hover:text-blue-300">Book a Call →</a></div>
+  </div>
+</section>
+
+<!-- 4. FEATURED BLOG ARTICLE -->
+<section class="bg-gray-800 py-20 text-white">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a7c223d959-a37060e0deff635e4e83.png" class="w-full h-auto rounded-2xl" />
+    <div>
+      <span class="text-purple-400 text-sm">FEATURED</span>
+      <h3 class="text-3xl font-bold mt-4 mb-4">The Future of Work: AI's Impact on Tech Careers in 2025</h3>
+      <p class="text-gray-300 mb-6">An in-depth look at how artificial intelligence is reshaping the technology industry and what it means for your career path.</p>
+      <p class="text-sm text-gray-500 mb-4">By Brandon Omoregie</p>
+      <a href="https://blog.careerkitchen.co" class="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700">Read Article</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LATEST ARTICLES -->
+<section class="py-20 text-center bg-black text-white">
+  <h2 class="text-4xl font-bold mb-12">Latest Articles</h2>
+  <div class="grid md:grid-cols-3 gap-8 px-4 max-w-7xl mx-auto">
+    <div class="bg-gray-800 p-6 rounded-2xl"><img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/05731f66db-bdec365a3e10fa4a4461.png" class="w-full h-48 rounded-xl object-cover mb-4"/><h3 class="text-xl font-semibold mb-2">5 Crucial Skills Every Tech Leader Needs in 2025</h3><p class="text-gray-400 text-sm mb-2">By Brandon Omoregie • Dec 12</p><a href="https://blog.careerkitchen.co" class="text-purple-400 hover:text-purple-300 text-sm">Read More →</a></div>
+    <div class="bg-gray-800 p-6 rounded-2xl"><img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/755d1a18a3-4d39ce1881051e189598.png" class="w-full h-48 rounded-xl object-cover mb-4"/><h3 class="text-xl font-semibold mb-2">The Remote Work Revolution: Finding Your Dream Job</h3><p class="text-gray-400 text-sm mb-2">By Brandon Omoregie • Dec 10</p><a href="https://blog.careerkitchen.co" class="text-purple-400 hover:text-purple-300 text-sm">Read More →</a></div>
+    <div class="bg-gray-800 p-6 rounded-2xl"><img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a7c223d959-a37060e0deff635e4e83.png" class="w-full h-48 rounded-xl object-cover mb-4"/><h3 class="text-xl font-semibold mb-2">Mastering the Tech Interview: A Developer's Guide</h3><p class="text-gray-400 text-sm mb-2">By Brandon Omoregie • Dec 8</p><a href="https://blog.careerkitchen.co" class="text-purple-400 hover:text-purple-300 text-sm">Read More →</a></div>
+  </div>
+</section>
+
+<!-- 6. NEWSLETTER CTA -->
+<section class="py-20 bg-purple-800 text-center text-white">
+  <h2 class="text-4xl font-bold mb-6">Never Miss an Article</h2>
+  <p class="text-xl mb-10">Get our weekly newsletter with the latest career insights, interview tips, and tech trends.</p>
+  <a href="https://form.typeform.com/to/vUdWHzFB" target="_blank"><button class="px-8 py-4 bg-white text-purple-800 font-bold rounded-full hover:bg-gray-100">Subscribe</button></a>
+</section>
+
+<!-- 7. SUCCESS STORIES -->
+<section class="py-20 text-center bg-black text-white">
+  <h2 class="text-4xl font-bold mb-12">Your Success Story Is Next</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><p class="mb-4">"I landed my first client in 3 weeks with RecruitPro. The community support was incredible!"</p><h4 class="font-bold text-white">Sarah Johnson</h4><p class="text-purple-400">Freelance Tech Recruiter</p></div>
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><p class="mb-4">"I made 8k in my first 6 weeks of entering the program as a Freelance Tech Recruiter!!"</p><h4 class="font-bold text-white">Dejanira (Dej) L.</h4><p class="text-purple-400">Freelance Tech Recruiter</p></div>
+    <div class="bg-gray-800/50 p-6 rounded-2xl"><p class="mb-4">"CareerKitchen helped me land a BDR role at Salesforce! Can't thank the team enough."</p><h4 class="font-bold text-white">Grant M.</h4><p class="text-purple-400">BDR at Salesforce</p></div>
+  </div>
+</section>
+
+<!-- 8. FOOTER -->
+<footer class="bg-black border-t border-purple-500/20 py-12 text-center text-gray-400 text-sm">
+  <p>© 2025 CareerKitchen. All rights reserved.</p>
+</footer>
+
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+</script>
+</body>
+</html>

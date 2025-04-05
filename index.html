@@ -58,48 +58,43 @@
   </a>
 </header>
 
-<!-- SLIDER HEADING -->
-<section class="pt-32 pb-10 bg-gradient-to-b from-gray-900 via-purple-900 to-blue-900 text-center">
-  <h2 class="text-4xl font-bold mb-4">Get Career Advice from Industry Experts</h2>
-</section>
-
-<!-- SWIPER OVERLAY CAROUSEL -->
-<div class="swiper">
+<!-- Swiper Fullscreen Carousel -->
+<div class="swiper pt-20">
   <div class="swiper-wrapper">
 
-    <!-- Slide: Jesse -->
-    <div class="swiper-slide" style="background-image: url('jesse-osbourne.png');">
-      <div class="slide-overlay">
+    <!-- Slide: Jesse Osbourne -->
+    <div class="swiper-slide" style="background-image: url('jesse-osbourne.png'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+      <div class="overlay-box absolute top-[20%] left-[5%] bg-black/70 p-8 rounded-xl max-w-xl">
         <p class="uppercase text-sm mb-2 text-purple-300">Latest Podcast</p>
-        <h2 class="mb-4">The unteachable power of motivation with Jesse Osbourne</h2>
-        <a href="#" class="text-purple-300 underline hover:text-purple-100">Listen Now →</a>
+        <h2 class="text-5xl font-bold mb-4">The unteachable power of motivation with Jesse Osbourne</h2>
+        <a href="#" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a>
       </div>
     </div>
 
-    <!-- Slide: Daymond -->
-    <div class="swiper-slide" style="background-image: url('daymond-john.png');">
-      <div class="slide-overlay">
+    <!-- Slide: Gary Vee -->
+    <div class="swiper-slide" style="background-image: url('gary-vee.png'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+      <div class="overlay-box absolute top-[20%] left-[5%] bg-black/70 p-8 rounded-xl max-w-xl">
         <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
-        <h2 class="mb-4">Daymond John: Building Your Personal Brand</h2>
-        <a href="https://www.youtube.com/watch?v=3ELrPRRV7cQ&t=1550s" class="text-purple-300 underline hover:text-purple-100" target="_blank">Watch Now →</a>
+        <h2 class="text-5xl font-bold mb-4">Gary Vee: Hustle in the Digital Age</h2>
+        <a href="https://www.youtube.com/watch?v=_RlhDkgRhf0&t=325s" target="_blank" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a>
       </div>
     </div>
 
-    <!-- Slide: Gary -->
-    <div class="swiper-slide" style="background-image: url('gary-vee.png');">
-      <div class="slide-overlay">
+    <!-- Slide: Chris Gardner -->
+    <div class="swiper-slide" style="background-image: url('chris-gardner.png'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+      <div class="overlay-box absolute top-[20%] left-[5%] bg-black/70 p-8 rounded-xl max-w-xl">
         <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
-        <h2 class="mb-4">Gary Vee: Hustle in the Digital Age</h2>
-        <a href="https://www.youtube.com/watch?v=_RlhDkgRhf0&t=325s" class="text-purple-300 underline hover:text-purple-100" target="_blank">Watch Now →</a>
+        <h2 class="text-5xl font-bold mb-4">Chris Gardner: From Struggle to Success</h2>
+        <a href="https://www.youtube.com/watch?v=HavdjDXB8xY" target="_blank" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a>
       </div>
     </div>
 
-    <!-- Slide: Chris -->
-    <div class="swiper-slide" style="background-image: url('chris-gardner.png');">
-      <div class="slide-overlay">
+    <!-- Slide: Daymond John -->
+    <div class="swiper-slide" style="background-image: url('daymond-john.png'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+      <div class="overlay-box absolute top-[20%] left-[5%] bg-black/70 p-8 rounded-xl max-w-xl">
         <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
-        <h2 class="mb-4">Chris Gardner: From Struggle to Success</h2>
-        <a href="https://www.youtube.com/watch?v=HavdjDXB8xY" class="text-purple-300 underline hover:text-purple-100" target="_blank">Watch Now →</a>
+        <h2 class="text-5xl font-bold mb-4">Daymond John: Building Your Personal Brand</h2>
+        <a href="https://www.youtube.com/watch?v=3ELrPRRV7cQ&t=1550s" target="_blank" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a>
       </div>
     </div>
 
@@ -107,14 +102,20 @@
   <div class="swiper-pagination swiper-pagination-vertical"></div>
 </div>
 
-<!-- SWIPER JS -->
+<!-- Swiper JS (place before </body>) -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   const swiper = new Swiper('.swiper', {
     direction: 'vertical',
     loop: true,
-    autoplay: { delay: 5000, disableOnInteraction: false },
-    pagination: { el: '.swiper-pagination', clickable: true }
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
   });
 </script>
 

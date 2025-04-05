@@ -185,5 +185,21 @@
 <footer class="bg-gray-900 border-t border-purple-500/20 py-12 text-center text-gray-400">
   <p>© 2025 CareerKitchen. All rights reserved.</p>
 </footer>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+</script>
 </body>
 </html>

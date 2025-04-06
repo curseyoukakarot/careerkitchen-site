@@ -14,21 +14,27 @@
 </head>
 <body class="bg-[#0a0b1e] text-white">
 
-<!-- Navbar -->
-<header class="py-4 px-6 flex justify-between items-center">
-  <div class="flex items-center">
-    <img src="career-kitchen-logo-trimmed.png" alt="CareerKitchen Logo" class="h-[80px] w-auto max-w-none" />
+<!-- CareerKitchen Navbar (with Medium blog link) -->
+<header class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img src="career-kitchen-logo-trimmed.png" alt="CareerKitchen Logo" class="h-[80px] w-auto max-w-none" />
+      </a>
+    </div>
+    <nav class="hidden md:flex space-x-8">
+      <a href="/" class="text-white hover:text-purple-400">Home</a>
+      <a href="https://blog.careerkitchen.co" class="text-white hover:text-purple-400" target="_blank">Blog</a>
+      <a href="/podcast" class="text-white hover:text-purple-400">Podcast</a>
+      <a href="/resources" class="text-white hover:text-purple-400">Resources</a>
+      <a href="/recruitpro" class="text-white hover:text-purple-400">RecruitPro</a>
+    </nav>
+    <a href="https://form.typeform.com/to/vUdWHzFB" target="_blank">
+      <button class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full hover:opacity-90">
+        Subscribe
+      </button>
+    </a>
   </div>
-  <nav class="hidden md:flex space-x-8">
-    <a href="/index.html" class="hover:text-purple-400">Home</a>
-    <a href="/blog.html" class="hover:text-purple-400">Blog</a>
-    <a href="/podcast.html" class="text-purple-400 border-b-2 border-purple-500">Podcast</a>
-    <a href="/resources.html" class="hover:text-purple-400">Resources</a>
-    <a href="/recruitpro.html" class="hover:text-purple-400">RecruitPro</a>
-  </nav>
-  <a href="https://form.typeform.com/to/vUdWHzFB" target="_blank">
-    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Subscribe</button>
-  </a>
 </header>
 
 <!-- Hero -->

@@ -95,14 +95,52 @@
   <p class="text-gray-400 text-xl max-w-2xl mx-auto">Real stories, expert strategies, and proven tools to help you land your dream job or build your freelance career</p>
 </section>
 
-<!-- 2. PODCAST CAROUSEL -->
-<div class="swiper">
+<!-- PODCAST CAROUSEL -->
+<div class="swiper w-full h-[600px] sm:h-[400px] relative overflow-hidden">
   <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="jesse-osbourne.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Latest Podcast</p><h2 class="mb-4">The unteachable power of motivation with Jesse Osbourne</h2><a href="#" class="text-purple-300 underline hover:text-purple-100 text-lg">Watch Now →</a></div></div>
-    <div class="swiper-slide"><img src="gary-vee.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Gary Vee: Hustle in the Digital Age</h2><a href="https://www.youtube.com/watch?v=_RlhDkgRhf0&t=325s" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
-    <div class="swiper-slide"><img src="chris-gardner.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Chris Gardner: From Struggle to Success</h2><a href="https://www.youtube.com/watch?v=HavdjDXB8xY" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
-    <div class="swiper-slide"><img src="daymond-john.png" class="slide-img"/><div class="overlay"><p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p><h2 class="mb-4">Daymond John: Building Your Personal Brand</h2><a href="https://www.youtube.com/watch?v=3ELrPRRV7cQ&t=1550s" class="text-purple-300 underline hover:text-purple-100 text-lg" target="_blank">Watch Now →</a></div></div>
+    <div class="swiper-slide relative">
+      <img src="jesse-osbourne.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex items-center justify-start px-6 sm:px-12 bg-black/40">
+        <div>
+          <p class="uppercase text-sm mb-2 text-purple-300">Latest Podcast</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">The unteachable power of motivation with Jesse Osbourne</h2>
+          <a href="#" class="text-purple-300 hover:underline">Watch Now →</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide relative">
+      <img src="gary-vee.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex items-center justify-start px-6 sm:px-12 bg-black/40">
+        <div>
+          <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Gary Vee: Hustle in the Digital Age</h2>
+          <a href="#" class="text-purple-300 hover:underline">Watch Now →</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide relative">
+      <img src="chris-gardner.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex items-center justify-start px-6 sm:px-12 bg-black/40">
+        <div>
+          <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Chris Gardner: From Struggle to Success</h2>
+          <a href="#" class="text-purple-300 hover:underline">Watch Now →</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide relative">
+      <img src="daymond-john.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 flex items-center justify-start px-6 sm:px-12 bg-black/40">
+        <div>
+          <p class="uppercase text-sm mb-2 text-purple-300">Podcast Episode</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Daymond John: Building Your Personal Brand</h2>
+          <a href="#" class="text-purple-300 hover:underline">Watch Now →</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Pagination (optional for mobile touch scroll) -->
   <div class="swiper-pagination swiper-pagination-vertical"></div>
 </div>
 
@@ -172,12 +210,15 @@
       delay: 5000,
       disableOnInteraction: false
     },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
     pagination: {
       el: '.swiper-pagination',
       clickable: true
     }
   });
 </script>
+  
 <script>
   const toggle = document.getElementById('mobile-menu-toggle');
   const menu = document.getElementById('mobile-menu');

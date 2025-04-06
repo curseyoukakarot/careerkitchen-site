@@ -19,25 +19,44 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-<!-- CareerKitchen Navbar (with Medium blog link) -->
-<header class="fixed w-full top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
-  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-4">
-      <a href="/">
-        <img src="career-kitchen-logo-trimmed.png" alt="CareerKitchen Logo" class="h-[80px] w-auto max-w-none" />
-      </a>
-    </div>
-    <nav class="hidden md:flex space-x-8">
-      <a href="/" class="text-white hover:text-purple-400">Home</a>
-      <a href="https://blog.careerkitchen.co" class="text-white hover:text-purple-400" target="_blank">Blog</a>
-      <a href="/podcast" class="text-white hover:text-purple-400">Podcast</a>
-      <a href="/resources" class="text-white hover:text-purple-400">Resources</a>
-      <a href="/recruitpro" class="text-white hover:text-purple-400">RecruitPro</a>
+<header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-purple-500/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="career-kitchen-logo-trimmed.png" alt="CareerKitchen logo" class="h-10 w-auto sm:h-8" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-white">
+      <a href="/" class="text-purple-400 font-semibold border-b-2 border-purple-500">Home</a>
+      <a href="https://blog.careerkitchen.co" class="hover:text-purple-400">Blog</a>
+      <a href="/podcast" class="hover:text-purple-400">Podcast</a>
+      <a href="/resources" class="hover:text-purple-400">Resources</a>
+      <a href="/recruitpro" class="hover:text-purple-400">RecruitPro</a>
     </nav>
-    <a href="https://form.typeform.com/to/vUdWHzFB" target="_blank">
-      <button class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full hover:opacity-90">
-        Subscribe
-      </button>
+
+    <!-- Subscribe Button -->
+    <a href="https://form.typeform.com/to/vUdWHzFB" class="hidden md:inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition">
+      Subscribe
+    </a>
+
+    <!-- Mobile Hamburger -->
+    <button id="mobile-menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-purple-500/20 px-4 py-6 space-y-4 text-white">
+    <a href="/" class="block text-purple-400 font-semibold">Home</a>
+    <a href="https://blog.careerkitchen.co" class="block hover:text-purple-400">Blog</a>
+    <a href="/podcast" class="block hover:text-purple-400">Podcast</a>
+    <a href="/resources" class="block hover:text-purple-400">Resources</a>
+    <a href="/recruitpro" class="block hover:text-purple-400">RecruitPro</a>
+    <a href="https://form.typeform.com/to/vUdWHzFB" class="block w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center px-4 py-2 rounded-full mt-4">
+      Subscribe
     </a>
   </div>
 </header>
